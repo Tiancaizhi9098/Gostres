@@ -12,7 +12,7 @@ ARCH=$(uname -m)
 echo "Detected OS: $OS, Architecture: $ARCH"
 
 # 定义仓库的 raw 文件基础 URL（替换为你的实际仓库）
-REPO_URL="https://raw.githubusercontent.com/Tiancaizhi9098/Trojan-Horse/main"
+REPO_URL="https://raw.githubusercontent.com/Tiancaizhi9098/Gostres/main"
 
 # 根据操作系统和架构选择对应的程序文件
 case "$OS:$ARCH" in
