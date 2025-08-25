@@ -3,22 +3,22 @@
 # Detect architecture
 ARCH=$(uname -m)
 
-# Map architecture to binary names (assuming binaries are named like gostres_${ARCH})
+# Map architecture to binary names (assuming binaries are named like ${ARCH})
 case "$ARCH" in
-    armv5l) BINARY="gostres_armv5l" ;;
-    armv6l) BINARY="gostres_armv6l" ;;
-    armv7l) BINARY="gostres_armv7l" ;;  # Assuming armv7/ means armv7l
-    armv8l|aarch64) BINARY="gostres_armv8l" ;;  # armv8l often maps to aarch64
-    mips) BINARY="gostres_mips" ;;
-    mips64) BINARY="gostres_mips64" ;;
-    mips64le) BINARY="gostres_mips64le" ;;
-    mipsel) BINARY="gostres_mipsel" ;;
-    ppc64) BINARY="gostres_ppc64" ;;
-    ppc64le) BINARY="gostres_ppc64le" ;;
-    riscv64) BINARY="gostres_riscv64" ;;
-    s390x) BINARY="gostres_s390x" ;;
-    i386|i686) BINARY="gostres_x86" ;;
-    x86_64) BINARY="gostres_x86_64" ;;
+    armv5l) BINARY="armv5l" ;;
+    armv6l) BINARY="armv6l" ;;
+    armv7l) BINARY="armv7l" ;;  # Assuming armv7/ means armv7l
+    armv8l|aarch64) BINARY="armv8l" ;;  # armv8l often maps to aarch64
+    mips) BINARY="mips" ;;
+    mips64) BINARY="mips64" ;;
+    mips64le) BINARY="mips64le" ;;
+    mipsel) BINARY="mipsel" ;;
+    ppc64) BINARY="ppc64" ;;
+    ppc64le) BINARY="ppc64le" ;;
+    riscv64) BINARY="riscv64" ;;
+    s390x) BINARY="s390x" ;;
+    i386|i686) BINARY="x86" ;;
+    x86_64) BINARY="x86_64" ;;
     *) echo "Unsupported architecture: $ARCH"; exit 1 ;;
 esac
 
