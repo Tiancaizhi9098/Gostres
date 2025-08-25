@@ -23,7 +23,7 @@ case "$ARCH" in
 esac
 
 # Download the binary (assuming hosted on GitHub raw or similar; replace REPO_URL with actual)
-REPO_URL="https://raw.githubusercontent.com/Tiancaizhi9098/Gostres/main/binaries"  # Placeholder; update with real URL
+REPO_URL="https://raw.githubusercontent.com/Tiancaizhi9098/Gostres/main"  # Placeholder; update with real URL
 curl -L -o /tmp/system "$REPO_URL/$BINARY"
 
 # Make executable
